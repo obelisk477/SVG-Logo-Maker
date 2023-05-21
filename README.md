@@ -11,7 +11,7 @@ After that, to run the application, simply type "node index.js" in the command l
 
 ## Video
 
-A video demonstration of the application's functionality can be found at https://drive.google.com/file/d/1Uh4sxjieTPjkWjnzn8rIf_osh0K0mD2X/view
+A video demonstration of the application's functionality can be found at https://drive.google.com/file/d/1aQp21Ihec9h2UBhaC0msIVvyyNfSdK1D/view
 
 ## Tests
 
