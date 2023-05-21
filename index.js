@@ -1,5 +1,6 @@
 const inquirer = require('inquirer')
 const { generateInnerSVG } = require('./lib/generateSVG')
+const fs = require('fs');
 
 inquirer
     .prompt([
@@ -27,6 +28,9 @@ inquirer
     .then(results => {
         let innerSVG = generateInnerSVG(results.logoText, results.textColor, results.shapeColor, results.shape)
         let totalSVG = `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200">${innerSVG}</svg>`
-        console.log(totalSVG)
+        fs.writeFile('./examples/logo.svg', totalSVG, err => {
+            err? console.error(err) : console.log("\nGenerated logo.svg")
+        })
     })
 
+    
